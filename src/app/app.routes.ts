@@ -4,11 +4,13 @@ import { SellerAuthComponent } from './Components/seller-auth/seller-auth.compon
 import { SellerHomeComponent } from './Components/seller-home/seller-home.component';
 import { authGuard } from './Guard/auth.guard';
 import { SellerAddProductComponent } from './Components/seller-add-product/seller-add-product.component';
+import { SellerUpdateProductComponent } from './Components/seller-update-product/seller-update-product.component';
 
 export const routes: Routes = [
     {path:'',redirectTo:'/home',pathMatch:'full'},
     {path:'home',component:HomeComponent},
     {path:'seller-auth',component:SellerAuthComponent},
     {path:'seller-home',component:SellerHomeComponent,canActivate:[authGuard]},
-    {path:'seller-add-product',component:SellerAddProductComponent,canActivate:[authGuard]}
+    {path:'seller-add-product',component:SellerAddProductComponent,canActivate:[authGuard]},
+    {path:'seller-update-product/:id',component:SellerUpdateProductComponent,canActivate:[authGuard]}
 ];

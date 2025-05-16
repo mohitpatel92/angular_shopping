@@ -1,1 +1,42 @@
-<p>seller-home works!</p>
+<div class="flex flex-col">
+    <div class="text-center text-5xl font-bold mb-8 text-blue-700">All Product List</div>
+    <div class="text-center text-3xl font-bold mb-8 text-red-500">{{produtctMessage}}</div>
+  <div class="-m-1.5 overflow-x-auto">
+    <div class="p-1.5 min-w-full inline-block align-middle">
+      <div class="overflow-hidden">
+        <table class="min-w-full divide-y divide-gray-200 text-xl">
+          <thead>
+            <tr>
+              <th scope="col" class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase">Image</th>
+              <th scope="col" class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase">Name</th>
+              <th scope="col" class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase">Price</th>
+              <th scope="col" class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase">Color</th>
+              <th scope="col" class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase">Category</th>
+              <th scope="col" class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase">Description</th>
+              <th scope="col" class="px-6 py-3 text-end text-xl font-medium text-gray-500 uppercase">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd:bg-white even:bg-gray-100 hover:bg-gray-100" *ngFor="let item of productList">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">
+                <img src={{item.image}} class="h-[100px] w-[100px]">
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-xl text-gray-800">{{item.name}}</td>
+              <td class="px-6 py-4 whitespace-nowrap text-xl text-gray-800">{{item.price}}</td>
+              <td class="px-6 py-4 whitespace-nowrap text-xl text-gray-800">{{item.color}}</td>
+              <td class="px-6 py-4 whitespace-nowrap text-xl text-gray-800">{{item.category}}</td>
+              <td class="px-6 py-4 whitespace-nowrap w-[90px] text-xl text-gray-800">{{item.description}}</td>
+              <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
+         <a routerLink="/seller-update-product/{{item.id}}">   <button type="button" class="text-xl font-semibold  text-blue-600 hover:text-blue-800  cursor-pointer" (click)="edit(item.id)" >Edit</button></a> &nbsp;
+             <button type="button" class="text-xl font-semibold text-blue-600 hover:text-blue-800 cursor-pointer" (click)="deleteProduct(item.id)">Delete</button>
+                
+              </td>
+            </tr>
+
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

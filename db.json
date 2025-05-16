@@ -24,14 +24,75 @@
       "email": "hardik@in.com",
       "id": 4
     },
-    
     {
       "email": "king@in.com",
       "password": "123",
       "id": 6
     }
   ],
-  "products":[
-    
+  "products": [
+    {
+      "name": "I Phone 14 max pro",
+      "price": "125000",
+      "category": "mobile",
+      "color": "silver",
+      "description": "Hello this is apple product",
+      "image": "https://images.macrumors.com/t/SuHt0iQuSjaO-ExOZzJieONGf_I=/2500x/article-new/2023/09/iPhone-15-Pro-Lineup-Feature.jpg",
+      "id": 1
+    },
+    {
+      "name": "One Plus",
+      "price": "50000",
+      "color": "silver",
+      "category": "mobile",
+      "description": "new phone",
+      "image": "https://media.wired.com/photos/65307f72d28937d298777dbf/191:100/w_1280,c_limit/OnePlus-Open-Review-Featured-Gear.jpg?mbid=social_retweet",
+      "id": 2
+    },
+    {
+      "name": "Laptop",
+      "price": "60000",
+      "category": "laptop",
+      "color": "black",
+      "description": "new laptop",
+      "image": "https://s.yimg.com/uu/api/res/1.2/VAIXo0bjHGYVFAAaHAb8xw--~B/Zmk9c3RyaW07aD03MjA7dz0xMjgwO2FwcGlkPXl0YWNoeW9u/https://s.yimg.com/os/creatr-uploaded-images/2024-10/64081ea0-9d46-11ef-bfff-7ba57dd7df36",
+      "id": 3
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "2500",
+      "category": "shoes",
+      "color": "blue",
+      "description": "This is best Nice Shoes",
+      "image": "https://i.pinimg.com/736x/e5/61/eb/e561ebcfad2ee148e8d4af07241dc416.jpg",
+      "id": 4
+    },
+    {
+      "name": "PS5",
+      "price": "45000",
+      "category": "playstation",
+      "color": "white",
+      "description": "This is play station for play game",
+      "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202409/sony-110725755-1x1.jpeg?VersionId=joSzXPBDB0gOOYSmEX1CK5d.IqbMdxru",
+      "id": 5
+    },
+    {
+      "name": "Omege Watch",
+      "price": "3000000",
+      "color": "gray",
+      "category": "watch",
+      "description": "this is most expensive watch",
+      "image": "https://cdn1.ethoswatches.com/media/catalog/product/cache/f0b79ae043f96db23a7b71063265844a/o/m/omega-seamaster-220-10-41-21-03-004_1.jpg?tr=w-164",
+      "id": 6
+    },
+    {
+      "name": "Sony Headphone",
+      "price": "4000",
+      "category": "headphone",
+      "color": "black",
+      "description": "this is very nice Sony Headphone",
+      "image": "https://m.media-amazon.com/images/I/41lArSiD5hL.jpg",
+      "id": 7
+    }
   ]
 }

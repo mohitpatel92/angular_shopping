@@ -11,15 +11,15 @@
         >
           Add New Product
         </h1>
-        <div class="text-center text-green-700 text-xl">{{addProductMessage}}</div>
-        <form class="space-y-4 md:space-y-6" #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)">
+        <div class="text-center text-green-700 text-xl">{{productMsg}}</div>
+        <form class="space-y-4 md:space-y-6" #updateProduct="ngForm" (ngSubmit)="submit(updateProduct.value)">
           <div>
             <input
               type="name"
               name="name"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
               placeholder="Enter Product Name"
-              ngModel
+              ngModel="{{productData?.name}}"
             />
           </div>
           <div>
@@ -29,7 +29,7 @@
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
               placeholder="Enter Product Price"
               required
-              ngModel
+              ngModel="{{productData?.price}}"
             />
           </div>
           <div>
@@ -39,7 +39,7 @@
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
               placeholder="Enter Product Color"
               required
-              ngModel
+              ngModel="{{productData?.color}}"
             />
           </div>
           <div>
@@ -48,7 +48,7 @@
               name="category"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
               placeholder="Enter Product Category"
-              ngModel
+              ngModel="{{productData?.category}}"
             />
           </div>
           <div>
@@ -57,7 +57,7 @@
               name="description"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
               placeholder="Enter Product Description"
-              ngModel
+              ngModel="{{productData?.description}}"
             ></textarea>
           </div>
           <div>
@@ -66,7 +66,7 @@
               name="image"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
               placeholder="Enter Product Image URL"
-              ngModel
+              ngModel="{{productData?.image}}"
             />
           </div>
 
@@ -74,7 +74,7 @@
             type="submit"
             class="w-full text-white bg-blue-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center cursor-pointer"
           >
-            Add Product
+            Update Product
           </button>
           
         </form>
