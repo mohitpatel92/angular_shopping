@@ -1,7 +1,37 @@
 {
   "seller": [
     {
-     "id":1
+      "name": "mohit",
+      "password": "123",
+      "email": "mohit@in.com",
+      "id": 1
+    },
+    {
+      "name": "gill",
+      "password": "123",
+      "email": "gill@in.com",
+      "id": 2
+    },
+    {
+      "name": "virat",
+      "password": "123",
+      "email": "virat@in.com",
+      "id": 3
+    },
+    {
+      "name": "hardik",
+      "password": "123",
+      "email": "hardik@in.com",
+      "id": 4
+    },
+    
+    {
+      "email": "king@in.com",
+      "password": "123",
+      "id": 6
     }
+  ],
+  "products":[
+    
   ]
- }
+}

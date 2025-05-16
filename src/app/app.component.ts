@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./Components/header/header.component";
+import { ServiceService } from './Service/service.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,9 @@ import { HeaderComponent } from "./Components/header/header.component";
 })
 export class AppComponent {
   title = 'angular_shopping';
+  constructor(private seller:ServiceService){}
+
+  ngOnInit(): void {
+    this.seller.reloadSeller()
+  }
 }
