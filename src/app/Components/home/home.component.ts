@@ -19,9 +19,13 @@ export class HomeComponent {
   constructor(private product:ProductService){}
 
   ngOnInit(): void {
-    this.product.populerProduct().subscribe((data) =>{
-      //console.log(data);
+    this.product.populerProduct().subscribe((data) =>{      
       this.populerProducts = data
+
+      this.product.trendyProduct().subscribe((res)=>{
+        this.trendyProducts = res 
+      })
+
     })
   
    }

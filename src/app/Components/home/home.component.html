@@ -1,4 +1,4 @@
-<ngb-carousel *ngIf="populerProducts" >
+<ngb-carousel *ngIf="populerProducts">
   <ng-template *ngFor="let item of populerProducts" ngbSlide>
     <div class="picsum-img-wrapper">
       <a routerLink="/details/{{ item.id }}">
@@ -14,3 +14,73 @@
     </div>
   </ng-template>
 </ngb-carousel>
+
+<section class="bg-gray-50 py-8 antialiased dark:bg-gray-900 mt-10 md:py-12">
+  <h3 class="text-center !text-5xl !text-blue-700 p-6">Trendy Product</h3>
+  <div class="grid grid-cols-4">
+    <div
+      class="mx-auto max-w-screen-xl px-4 2xl:px-0"
+      *ngFor="let item of trendyProducts"
+    >
+      <!-- Heading & Filters -->
+
+      <div
+        class="mb-4 grid gap-4 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 xl:grid-cols-4"
+      >
+        <div
+          class="rounded-lg border border-gray-200 w-[360px] bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+        >
+          <div class="h-56 w-full">
+            <a href="#">
+              <img
+                class="mx-auto h-full dark:hidden"
+                src="{{ item.image }}"
+                alt=""
+              />
+              <!-- <img
+                class="mx-auto hidden h-full dark:block"
+                src="https://flowbite.s3.amazonaws.com/blocks/e-commerce/imac-front-dark.svg"
+                alt=""
+              /> -->
+            </a>
+          </div>
+          <div class="pt-6">
+            <a
+              href="#"
+              class="text-2xl font-semibold leading-tight text-gray-900 hover:underline dark:text-white"
+              >{{ item.name }}</a
+            >
+
+            <ul class="flex items-center !mt-6 justify-between !p-0">
+              <li class="flex items-center justify-between">
+                <p class="text-xl font-medium dark:text-gray-400">
+                  Color: {{ item.color }}
+                </p>
+              </li>
+              <li class="flex items-center gap-2">
+                <p
+                  class="text-2xl font-extrabold text-gray-900 dark:text-white"
+                >
+                  {{ item.price }}
+                </p>
+              </li>
+            </ul>
+
+            <div class="flex items-center justify-between gap-4">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                View Detail
+              </button>
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
