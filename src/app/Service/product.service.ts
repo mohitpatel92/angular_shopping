@@ -6,6 +6,7 @@ import { product } from '../data-type';
   providedIn: 'root'
 })
 export class ProductService {
+  
   proUrl = 'http://localhost:3000/products'
 
   constructor(private http:HttpClient) { }
@@ -29,5 +30,9 @@ export class ProductService {
   updateProduct(data:product){        
     return this.http.put<product>(`http://localhost:3000/products/${data.id}`,data)
   }
+   populerProduct() {
+    return this.http.get<product[]>('http://localhost:3000/products?_limit=3');
+  }
+
 
 }
