@@ -34,7 +34,11 @@ ngOnInit(): void {
 
   Login(data:login){
     this.user.userLogin(data)
-    
+    this.user.invalidUserAuth.subscribe((res)=>{
+      if(res){
+        this.authError = 'Please Enter valid Value'
+      }
+    })
   }
 
 }

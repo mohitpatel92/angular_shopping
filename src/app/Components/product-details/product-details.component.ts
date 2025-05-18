@@ -30,7 +30,7 @@ export class ProductDetailsComponent {
   }
 
   handleQunatity(val: string) {
-    if (this.productQuantity < 20 && val == 'plus') {      
+    if (this.productQuantity < 20 && val == 'plus') {
       this.productQuantity++;
       console.log('plus...', this.productQuantity);
     }
@@ -39,5 +39,12 @@ export class ProductDetailsComponent {
     }
   }
 
-  
+  addToCart() {
+    if (this.productData) {
+      this.productData.quantity = this.productQuantity;
+      if (!localStorage.getItem('user')) {
+        this.product.localAddCart(this.productData)
+      } 
+    }
+  }
 }
