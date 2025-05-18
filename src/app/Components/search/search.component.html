@@ -1,0 +1,27 @@
+
+
+@if(searchResult){
+
+<div *ngFor="let item of searchResult" class="p-4  ">
+
+    <a routerLink="/details/{{item.id}}"  class="flex flex-col p-4 !no-underline items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl hover:bg-gray-100 ">
+        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={{item.image}} >
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <a routerLink="/details/{{item.id}}">
+                {{item.name}}</a> </h5>
+            
+            <p class="mb-3 font-normal text-gray-700 "><span class="font-bold text-xg">Price</span> :{{item.price}}</p>
+            <p class="mb-3 font-normal text-gray-700 "><span class="font-bold text-xg">Color</span> :{{item.color}}</p>
+            <p class="mb-3 font-normal text-gray-700 "><span class="font-bold text-xg">Description</span> :{{item.description}}</p>
+        </div>
+    </a>
+</div>
+    
+
+
+}
+@if(searchResult?.length===0) {
+    <p>{{noProduct}}</p>
+    <p>NO Prodcuts Founds...</p>
+}

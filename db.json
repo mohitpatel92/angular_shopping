@@ -47,7 +47,6 @@
       "category": "mobile",
       "description": "new phone",
       "image": "https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2023/07/OnePlus-12-5K2-scaled.jpg?fit=2560%2C1440&ssl=1",
-      
       "id": 2
     },
     {
@@ -95,5 +94,26 @@
       "image": "https://m.media-amazon.com/images/I/41lArSiD5hL.jpg",
       "id": 7
     }
+  ],
+  "users": [
+    {
+      "name": "mohit",
+      "password": "123",
+      "email": "mohit@in.com",
+      "id": 1
+    },
+    {
+      "name": "virat",
+      "password": "123",
+      "email": "virat@in.com",
+      "id": 2
+    },
+    {
+      "name": "gill",
+      "password": "123",
+      "email": "gill@in.com",
+      "id": 3
+    }
+    
   ]
 }

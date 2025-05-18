@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { product } from '../data-type';
+import { ActivatedRoute } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ export class ProductService {
   
   proUrl = 'http://localhost:3000/products'
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private activeRouter:ActivatedRoute) { }
 
   addProduct(product:product){
    return this.http.post(this.proUrl,product)      
@@ -38,5 +39,10 @@ export class ProductService {
     return this.http.get<product[]>('http://localhost:3000/products?_limit=8');
   }
 
+  searchProducts(query:string){
+    return this.http.get<product[]>(`http://localhost:3000/products?q=${query}`)
+  }
+
+  
 
 }
