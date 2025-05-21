@@ -30,7 +30,7 @@ export class ProductDetailsComponent {
           let cartData = localStorage.getItem('localCart');
           if (productId && cartData) {
             let items = JSON.parse(cartData);
-            items = items.filter((e: product) => e.id.toString() === productId);
+            items = items.filter((e: product) => e.id?.toString() === productId);
             if (items.length) {
               this.removeCart = true;
             } else {

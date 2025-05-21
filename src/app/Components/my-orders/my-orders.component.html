@@ -1,4 +1,4 @@
-<div class="my-orders">
+<!-- <div class="my-orders">
   <h1>My Orders</h1>
   <div class="row">
     <div class="col-sm-2">
@@ -43,4 +43,72 @@
       </button>
     </div>
   </div>
-</div>
+</div> -->
+
+<table class="min-w-full divide-y divide-gray-200 text-xl">
+  <thead>
+    <tr>
+      <th
+        scope="col"
+        class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase"
+      >
+        Order
+      </th>
+      <th
+        scope="col"
+        class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase"
+      >
+        Order Id
+      </th>
+      <th
+        scope="col"
+        class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase"
+      >
+        Price
+      </th>
+      <th
+        scope="col"
+        class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase"
+      >
+        Status
+      </th>
+      <th
+        scope="col"
+        class="px-6 py-3 text-start text-xl font-medium text-gray-500 uppercase"
+      >
+        Cancel Order
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      class="odd:bg-white even:bg-gray-100 hover:bg-gray-100"
+      *ngFor="let item of orderData"
+    >
+      <td class="px-6 py-4 whitespace-nowrap text-xl text-gray-800">
+        <img
+          class="order-img h-[80px] w-[100px] p-2"
+          src="https://www.clipartmax.com/png/middle/210-2106541_track-my-order-beach-volleyball.png"
+          alt=""
+        />
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-xl text-gray-800">
+        {{ item.id }}
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-xl text-gray-800">
+        {{ item.totalPrice }}
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-xl text-gray-800">
+        In Progress
+      </td>
+      <td>
+        <button
+          (click)="cancelOrder(item.id)"
+          class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+        >
+          Cancel Order
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

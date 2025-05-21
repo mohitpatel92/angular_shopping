@@ -32,47 +32,47 @@
   ],
   "products": [
     {
-      "name": "I Phone 14 max pro",
+      "name": "I Phone 16 max pro",
       "price": "130000",
       "color": "silver",
       "category": "mobile",
-      "description": "Hello this is apple product",
+      "description": "iPhone 16 Pro Max 256 GB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Desert Titanium\n",
       "image": "https://images.macrumors.com/t/SuHt0iQuSjaO-ExOZzJieONGf_I=/2500x/article-new/2023/09/iPhone-15-Pro-Lineup-Feature.jpg",
       "id": 1
     },
     {
-      "name": "One Plus",
+      "name": "OnePlus 13",
       "price": "50000",
       "color": "silver",
       "category": "mobile",
-      "description": "new phone",
+      "description": "OnePlus 13 | Smarter with OnePlus AI (24GB RAM, 1TB Storage Black Eclipse)\n",
       "image": "https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2023/07/OnePlus-12-5K2-scaled.jpg?fit=2560%2C1440&ssl=1",
       "id": 2
     },
     {
-      "name": "Laptop",
+      "name": "Dell 15 3520 Thin & Light Laptop",
       "price": "60000",
-      "category": "laptop",
       "color": "black",
-      "description": "new laptop",
+      "category": "laptop",
+      "description": "Dell 15 3520 Thin & Light Laptop, Intel Core i3-1215U Processor, 12th Gen (8GB RAM /512GB SSD /Window 11 /MS Office' 21 /15.6\"(39.62 Cm) FHD Display /Intel UHD Graphics/15 Month Mcafee /Black /1.69Kg\n",
       "image": "https://cdn.mos.cms.futurecdn.net/3PHLzoi4LY72m8HQJbatmi.jpg",
       "id": 3
     },
     {
-      "name": "Nike Shoes",
+      "name": "Nike Revolution 7-Black",
       "price": "2500",
-      "category": "shoes",
       "color": "blue",
-      "description": "This is best Nice Shoes",
+      "category": "shoes",
+      "description": "Nike Revolution 7-Black/Hyper Crimson-Astronomy BLUE-SAIL-FB2207-008-11UK\n",
       "image": "https://i.pinimg.com/736x/e5/61/eb/e561ebcfad2ee148e8d4af07241dc416.jpg",
       "id": 4
     },
     {
-      "name": "PS5",
+      "name": "Sony PlayStation®5",
       "price": "45000",
-      "category": "playstation",
       "color": "white",
-      "description": "This is play station for play game",
+      "category": "playstation",
+      "description": "Sony PlayStation®5 Digital Edition (slim) Console Video Game\n",
       "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202409/sony-110725755-1x1.jpeg?VersionId=joSzXPBDB0gOOYSmEX1CK5d.IqbMdxru",
       "id": 5
     },
@@ -81,18 +81,27 @@
       "price": "3000000",
       "color": "gray",
       "category": "watch",
-      "description": "this is most expensive watch",
+      "description": "Omege Watches for Men Waterproof Luminous Watches with Date Dial Chronograph Analog Quartz Movement Steel Stainless Business Wrist Watches Mens Gifts\n",
       "image": "https://cdn1.ethoswatches.com/media/catalog/product/cache/f0b79ae043f96db23a7b71063265844a/o/m/omega-seamaster-220-10-41-21-03-004_1.jpg?tr=w-164",
       "id": 6
     },
     {
-      "name": "Sony Headphone",
+      "name": "Sony WH-CH520 Wireless Bluetooth",
       "price": "4000",
-      "category": "headphone",
       "color": "black",
-      "description": "this is very nice Sony Headphone",
+      "category": "headphone",
+      "description": "Sony WH-CH520 Wireless Bluetooth Headphones with Mic, Up to 50Hrs Battery, Quick Charge, DSEE Upscale, Multipoint Connectivity, Voice Assistant, Customized EQ-Blue",
       "image": "https://m.media-amazon.com/images/I/41lArSiD5hL.jpg",
       "id": 7
+    },
+    {
+      "name": "BoAt Airdopes 91 Prime",
+      "price": "699",
+      "color": "black",
+      "category": "electronics",
+      "description": "boAt Airdopes 91 Prime, 45HRS Battery, 13mm Drivers, Metallic Finish, Low Latency,ENx Tech, Fast Charge, v5.3 Bluetooth TWS in Ear Earbuds Wireless Earphones with mic (Midnight Black)\n",
+      "image": "https://m.media-amazon.com/images/I/713Lr2oNWaL._SX522_.jpg",
+      "id": 8
     }
   ],
   "users": [
@@ -129,16 +138,37 @@
       "id": 2
     },
     {
-      "name": "Laptop",
-      "price": "60000",
-      "category": "laptop",
-      "color": "black",
-      "description": "new laptop",
-      "image": "https://cdn.mos.cms.futurecdn.net/3PHLzoi4LY72m8HQJbatmi.jpg",
-      "quantity": 1,
-      "productId": 3,
+      "name": "One Plus",
+      "price": "50000",
+      "color": "silver",
+      "category": "mobile",
+      "description": "new phone",
+      "image": "https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2023/07/OnePlus-12-5K2-scaled.jpg?fit=2560%2C1440&ssl=1",
+      "productId": 2,
       "userId": 1,
       "id": 3
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "2500",
+      "category": "shoes",
+      "color": "blue",
+      "description": "This is best Nice Shoes",
+      "image": "https://i.pinimg.com/736x/e5/61/eb/e561ebcfad2ee148e8d4af07241dc416.jpg",
+      "productId": 4,
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "name": "One Plus",
+      "price": "50000",
+      "color": "silver",
+      "category": "mobile",
+      "description": "new phone",
+      "image": "https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2023/07/OnePlus-12-5K2-scaled.jpg?fit=2560%2C1440&ssl=1",
+      "productId": 2,
+      "userId": 1,
+      "id": 5
     }
   ],
   "orders": [
