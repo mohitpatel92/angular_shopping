@@ -33,9 +33,9 @@
   "products": [
     {
       "name": "I Phone 14 max pro",
-      "price": "125000",
-      "category": "mobile",
+      "price": "130000",
       "color": "silver",
+      "category": "mobile",
       "description": "Hello this is apple product",
       "image": "https://images.macrumors.com/t/SuHt0iQuSjaO-ExOZzJieONGf_I=/2500x/article-new/2023/09/iPhone-15-Pro-Lineup-Feature.jpg",
       "id": 1
@@ -114,6 +114,49 @@
       "email": "gill@in.com",
       "id": 3
     }
-    
+  ],
+  "cart": [
+    {
+      "name": "I Phone 14 max pro",
+      "price": "130000",
+      "color": "silver",
+      "category": "mobile",
+      "description": "Hello this is apple product",
+      "image": "https://images.macrumors.com/t/SuHt0iQuSjaO-ExOZzJieONGf_I=/2500x/article-new/2023/09/iPhone-15-Pro-Lineup-Feature.jpg",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "name": "Laptop",
+      "price": "60000",
+      "category": "laptop",
+      "color": "black",
+      "description": "new laptop",
+      "image": "https://cdn.mos.cms.futurecdn.net/3PHLzoi4LY72m8HQJbatmi.jpg",
+      "quantity": 1,
+      "productId": 3,
+      "userId": 1,
+      "id": 3
+    }
+  ],
+  "orders": [
+    {
+      "email": "virat@in.com",
+      "address": "banglore",
+      "contact": "88899977725",
+      "totalPrice": 80600,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "mohit@in.com",
+      "address": "ahmedabad",
+      "contact": "12334534534",
+      "totalPrice": 80600,
+      "userId": 1,
+      "id": 2
+    }
   ]
 }

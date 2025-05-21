@@ -1,0 +1,68 @@
+
+<div class="checkout">
+  <h1>Checkout</h1>
+  <div class="row">
+    <div class="col-sm-7">
+      <section class="bg-gray-50 dark:bg-gray-900 myim">
+        <div
+          class="flex flex-col items-center justify-center px-6 py-8 mx-auto h-[540px]"
+        >
+          <div
+            class="w-[520px] bg-white rounded-lg shadow dark:border  dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="p-6 space-y-4 md:space-y-6 sm:p-8 w-[520px]">
+              <h1
+                class="text-xl font-bold text-center text-gray-900 md:text-2xl dark:text-white"
+              >
+                Add Shopping Address
+              </h1>
+              <p class="text-center text-green-500">{{orderMsg}}</p>
+              <form class="space-y-4 md:space-y-6" #orderData="ngForm" (ngSubmit)="orderNow(orderData.value)">
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                    placeholder="Enter email"
+                    required
+                    ngModel
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="address"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                    placeholder="Enter Address"
+                    ngModel
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="contact"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                    placeholder="Enter contact"
+                    required
+                    ngModel
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br  font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                >
+                  Order Now
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="col-sm-5">
+      <h3>Total Amount: {{ totalPrice }}</h3>
+      <h4 class="text-center">Payment Method : <b>Pay on delivery</b></h4>
+    </div>
+  </div>
+</div>

@@ -25,7 +25,7 @@ export class UsersService {
 
   userAuthReload(){
     if(localStorage.getItem('user')){
-      this.router.navigateByUrl('/home')
+      this.router.navigateByUrl('/home')      
     }
   }
 

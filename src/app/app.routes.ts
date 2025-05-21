@@ -8,9 +8,12 @@ import { SellerUpdateProductComponent } from './Components/seller-update-product
 import { SearchComponent } from './Components/search/search.component';
 import { ProductDetailsComponent } from './Components/product-details/product-details.component';
 import { UserAuthComponent } from './Components/user-auth/user-auth.component';
+import { CartPageComponent } from './Components/cart-page/cart-page.component';
+import { CheckoutComponent } from './Components/checkout/checkout.component';
+import { MyOrdersComponent } from './Components/my-orders/my-orders.component';
 
 export const routes: Routes = [
-    {path:'',redirectTo:'/home',pathMatch:'full'},
+    {path:'',redirectTo:'home',pathMatch:'full'},
     {path:'home',component:HomeComponent},
     {path:'seller-auth',component:SellerAuthComponent},
     {path:'seller-home',component:SellerHomeComponent,canActivate:[authGuard]},
@@ -18,5 +21,8 @@ export const routes: Routes = [
     {path:'seller-update-product/:id',component:SellerUpdateProductComponent,canActivate:[authGuard]},
     {path:'search/:query',component:SearchComponent},
     {path:'details/:productId',component:ProductDetailsComponent},
-    {path:'user-auth',component:UserAuthComponent}
+    {path:'user-auth',component:UserAuthComponent},
+    {path:'cart-page',component:CartPageComponent},
+    {path:'checkout',component:CheckoutComponent},
+    {path:'my-orders',component:MyOrdersComponent}
 ];

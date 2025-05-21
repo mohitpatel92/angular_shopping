@@ -28,7 +28,7 @@ import { product } from '../../data-type';
 export class HeaderComponent {
   menuType: string = 'default';
   sellerName: string = '';
-  cartItems: number | undefined;
+  cartItems: number  = 0
   userName: string | undefined;
   searchResult: undefined | product[];
   constructor(private router: Router, private product: ProductService) {}
@@ -47,13 +47,21 @@ export class HeaderComponent {
           let userStore = localStorage.getItem('user')
           let useData = userStore && JSON.parse(userStore)
           this.userName = useData.name
-          this.menuType = 'user'          
+          this.menuType = 'user'         
+          this.product.getCartList(useData.id) 
           
         } else {
           this.menuType = 'default';
         }
       }
     });
+    let cartData = localStorage.getItem('localCart')
+    if(cartData){
+      this.cartItems = JSON.parse(cartData).length
+    }
+    this.product.cartData.subscribe((res)=>{
+      this.cartItems=res.length
+    })
   }
 
   searchProduct(query: KeyboardEvent) {
@@ -80,6 +88,7 @@ export class HeaderComponent {
   Logout() {
     localStorage.removeItem('seller');
     this.router.navigateByUrl('/');
+    this.product.cartData.emit([])
   }
 
 
